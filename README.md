@@ -1,14 +1,17 @@
 # 0XGAROU — PnL Card Bot
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Node](https://img.shields.io/badge/node-%3E%3D20-brightgreen)](https://nodejs.org)
+
 Bot Telegram yang membuat kartu PnL gaya struk untuk posisi LP.
 Data diisi lewat wizard bertombol, dihitung sekali, lalu disimpan sebagai snapshot
 immutable beserta PNG-nya. Kartu lama selalu bisa dikirim ulang dengan byte yang sama.
 
 ## Screenshot
 
-| PnL Card — profit | PnL Card — loss |
-| --- | --- |
-| <img src="docs/images/pnl-card-profit.png" width="360" alt="PnL card profit"> | <img src="docs/images/pnl-card-loss.png" width="360" alt="PnL card loss"> |
+| PnL Card — profit | PnL Card — loss | PnL Card — open (UNREALIZED) |
+| --- | --- | --- |
+| <img src="docs/images/pnl-card-profit.png" width="300" alt="PnL card profit"> | <img src="docs/images/pnl-card-loss.png" width="300" alt="PnL card loss"> | <img src="docs/images/pnl-card-open.png" width="300" alt="PnL card open dengan label unrealized"> |
 
 | Profit Calendar — bulan | minggu | hari |
 | --- | --- | --- |
