@@ -1,0 +1,36 @@
+{
+  "name": "pnl-card-bot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Receipt-style PnL card generator for a Telegram bot (0XGAROU)",
+  "scripts": {
+    "fonts": "mkdir -p assets/fonts && for w in Regular Medium Bold; do curl -sSL -o assets/fonts/JetBrainsMono-$w.ttf https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/ttf/JetBrainsMono-$w.ttf; done",
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "demo": "tsx scripts/demo.ts",
+    "backup": "tsx scripts/backup-db.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "better-sqlite3": "^12.4.1",
+    "grammy": "^1.38.3",
+    "satori": "^0.18.3",
+    "tsx": "^4.20.6"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^24.7.0",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  },
+  "allowScripts": {
+    "better-sqlite3@12.11.1": true,
+    "esbuild@0.28.2": true
+  }
+}

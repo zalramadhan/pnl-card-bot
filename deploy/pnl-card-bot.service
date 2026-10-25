@@ -1,0 +1,32 @@
+[Unit]
+Description=0XGAROU PnL Card Telegram bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=pnlbot
+Group=pnlbot
+WorkingDirectory=/opt/pnl-card-bot
+EnvironmentFile=/etc/pnl-card-bot.env
+Environment=NODE_ENV=production
+Environment=HOME=/var/lib/pnl-card-bot
+ExecStart=/usr/bin/node /opt/pnl-card-bot/node_modules/tsx/dist/cli.mjs src/index.ts
+Restart=always
+RestartSec=5
+TimeoutStopSec=20
+StateDirectory=pnl-card-bot
+
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+
+[Install]
+WantedBy=multi-user.target

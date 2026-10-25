@@ -1,0 +1,18 @@
+[Unit]
+Description=Backup database PnL Card bot (SQLite hot backup)
+After=pnl-card-bot.service
+
+[Service]
+Type=oneshot
+User=pnlbot
+Group=pnlbot
+WorkingDirectory=/opt/pnl-card-bot
+EnvironmentFile=/etc/pnl-card-bot.env
+Environment=HOME=/var/lib/pnl-card-bot
+ExecStart=/usr/bin/node /opt/pnl-card-bot/node_modules/tsx/dist/cli.mjs scripts/backup-db.ts
+ReadWritePaths=/var/backups/pnl-card-bot
+
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true

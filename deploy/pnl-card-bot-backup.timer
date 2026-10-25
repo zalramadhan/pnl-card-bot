@@ -1,0 +1,11 @@
+[Unit]
+Description=Backup harian database PnL Card bot
+
+[Timer]
+OnCalendar=*-*-* 03:30:00
+Persistent=true
+RandomizedDelaySec=300
+Unit=pnl-card-bot-backup.service
+
+[Install]
+WantedBy=timers.target
