@@ -20,6 +20,23 @@ immutable beserta PNG-nya. Kartu lama selalu bisa dikirim ulang dengan byte yang
 Semua gambar di atas dihasilkan langsung oleh renderer di repo ini
 (`npm run demo` dan `npx tsx scripts/calendar-demo.ts`).
 
+## Cara pakai singkat
+
+Contoh satu sesi penuh, tanpa command tambahan:
+
+1. Kirim `/start` — keyboard menu muncul dan menetap di bawah layar.
+2. Opsional: `/setname Budi` kalau mau judul kartu memakai nama itu
+   (balik ke nama Telegram dengan `/setname reset`).
+3. Tekan **🧾 Buat Kartu** (atau ketik `/newpnl`), lalu jawab wizard lewat tombol:
+   `FTR/ETH` → `Auto TP` → `Meteora` → `Closed` → `150K` → `162.5K` →
+   `100` → `112.4` → `12m 35s` → `Token` → `Spot` → `+10% to +25%`.
+   Angka yang tidak diketahui dikirim `-` (tampil `N/A`, bukan `0`).
+4. Ringkasan muncul di akhir; tekan **✅ Buat Kartu** dan bot mengirim PNG-nya.
+5. `/calendar` untuk rekap bulan berjalan (Bulan → Minggu → Hari), `/history`
+   untuk kirim ulang 5 kartu terakhir, `/demo` untuk contoh tanpa isi data.
+6. Salah masuk langkah? Kirim `/cancel` atau tekan **❌ Batal** — bot minta
+   konfirmasi dulu, jadi draft tidak hilang karena salah tekan.
+
 ## Yang berbeda dari spec awal
 
 - Baris **Fees & Gas dihapus**.
