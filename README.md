@@ -4,6 +4,19 @@ Bot Telegram yang membuat kartu PnL gaya struk untuk posisi LP.
 Data diisi lewat wizard bertombol, dihitung sekali, lalu disimpan sebagai snapshot
 immutable beserta PNG-nya. Kartu lama selalu bisa dikirim ulang dengan byte yang sama.
 
+## Screenshot
+
+| PnL Card — profit | PnL Card — loss |
+| --- | --- |
+| <img src="docs/images/pnl-card-profit.png" width="360" alt="PnL card profit"> | <img src="docs/images/pnl-card-loss.png" width="360" alt="PnL card loss"> |
+
+| Profit Calendar — bulan | minggu | hari |
+| --- | --- | --- |
+| <img src="docs/images/calendar-month.png" width="250" alt="Kalender bulan"> | <img src="docs/images/calendar-week.png" width="250" alt="Kalender minggu"> | <img src="docs/images/calendar-day.png" width="250" alt="Kalender hari"> |
+
+Semua gambar di atas dihasilkan langsung oleh renderer di repo ini
+(`npm run demo` dan `npx tsx scripts/calendar-demo.ts`).
+
 ## Yang berbeda dari spec awal
 
 - Baris **Fees & Gas dihapus**.
@@ -147,3 +160,7 @@ src/bot/calendar.ts  command /calendar, cache file_id, navigasi inline
 npm run typecheck
 npm test
 ```
+
+## Lisensi
+
+MIT — lihat [LICENSE](LICENSE).

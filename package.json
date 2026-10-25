@@ -2,6 +2,7 @@
   "name": "pnl-card-bot",
   "version": "1.0.0",
   "private": true,
+  "license": "MIT",
   "type": "module",
   "description": "Receipt-style PnL card generator for a Telegram bot (0XGAROU)",
   "scripts": {
