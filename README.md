@@ -1,6 +1,7 @@
 # 0XGAROU — PnL Card Bot
 
 [![CI](https://github.com/zalramadhan/pnl-card-bot/actions/workflows/ci.yml/badge.svg)](https://github.com/zalramadhan/pnl-card-bot/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/zalramadhan/pnl-card-bot?label=release&color=blue)](https://github.com/zalramadhan/pnl-card-bot/releases/latest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Node](https://img.shields.io/badge/node-%3E%3D20-brightgreen)](https://nodejs.org)
 
